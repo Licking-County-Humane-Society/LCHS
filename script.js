@@ -44,3 +44,11 @@ function setVolunteer(topic){const t=volunteerTopics[topic];if(!t)return;documen
 document.querySelectorAll('[data-vol]').forEach(b=>b.addEventListener('click',()=>setVolunteer(b.dataset.vol)));setVolunteer('dogs');
 const notice=document.querySelector('#travel-notice');
 if(notice){const now=new Date(); if(now>=new Date('2026-11-14T00:00:00-05:00'))notice.hidden=true;document.querySelector('#dismiss-notice').addEventListener('click',()=>{notice.hidden=true;});}
+
+// Micro-donation amount selection is illustrative; the official LCHS donation site collects payments.
+const tinyGiftOptions=document.querySelectorAll('[data-gift]');
+const tinyGiftStatus=document.getElementById('tiny-gift-status');
+tinyGiftOptions.forEach(button=>button.addEventListener('click',()=>{
+ tinyGiftOptions.forEach(b=>{const selected=b===button;b.classList.toggle('selected',selected);b.setAttribute('aria-pressed',String(selected));});
+ if(tinyGiftStatus)tinyGiftStatus.textContent=`$${button.dataset.gift} is a suggested gift. You'll choose your actual amount on the official donation page.`;
+}));
