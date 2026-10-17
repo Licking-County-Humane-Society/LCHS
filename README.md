@@ -30,3 +30,10 @@ Upload `index.html`, `styles.css`, and `script.js` to the root of a static host 
 Actual pet-system integration (with permission); a CMS for featured animals, stories and events; approved photography and Reels; accessible content/interaction testing; performance optimization and locally hosted images; SEO and structured data; a consent-aware analytics plan; editorial ownership and maintenance procedures.
 
 Research references: https://lchspets.org/ , https://lchspets.org/adoption-information/ , https://lchspets.org/volunteer/ , https://lchspets.org/thrift/ , https://lchspets.org/foster-care/ , https://lchspets.org/bright-spot-clinic/
+
+## Version 2.1: Micro-donation campaign concept
+- Replaces the generic donation banner with a playful “They can’t buy their own treats. But you can.” campaign.
+- $3/$5/$10 selector provides a visual suggestion; it does **not** transmit an amount or process payments.
+- All donation actions link to the organization’s public donation page.
+- Venmo, Cash App and Zelle are deliberately presented as **unconnected ideas**, not payment links. Add verified charity-owned accounts or QR codes only after explicit LCHS approval.
+- Claims that a specific donation amount buys a particular service are intentionally avoided.
