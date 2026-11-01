@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#173e32">
+<meta name="description" content="A $3 kindness for shelter pets — Licking County Humane Society donation concept demo.">
+<title>We Need Treats | LCHS — Demo</title>
+<style>
+:root{--green:#173e32;--olive:#778e6d;--coral:#f07c54;--cream:#fffaf0;--ink:#193f33;--muted:#617469;--line:#dbe6d7}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 5% 3%,#dce7cd 0,transparent 27%),radial-gradient(circle at 96% 95%,#ffdfc7 0,transparent 24%),var(--cream);color:var(--ink);font-family:ui-rounded,"Trebuchet MS",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100vh}main{max-width:490px;margin:0 auto;padding:22px 20px 48px}.demo{width:max-content;max-width:100%;margin:0 auto 18px;padding:7px 13px;border:1px solid #c6d5be;border-radius:50px;color:#46634a;background:#f1f6e9;font-size:11px;letter-spacing:.12em;font-weight:900;text-align:center}.brand{display:flex;align-items:center;gap:12px;justify-content:center;margin-bottom:18px}.mark{font-size:37px;line-height:1}.brand div{font-size:15px;line-height:1.04;font-weight:1000;letter-spacing:.045em}.brand small{display:block;font-size:10px;letter-spacing:.15em;margin-top:5px;color:#71856b}.card{background:#fffef9;border:1px solid #e6e9dc;border-radius:28px;padding:25px 22px 23px;box-shadow:0 14px 40px rgba(22,62,50,.08);text-align:center}.eyebrow{font-size:13px;font-weight:900;letter-spacing:.18em;color:var(--olive);margin:0 0 8px}h1{font-size:clamp(39px,10vw,58px);line-height:.98;margin:0;font-weight:1000;letter-spacing:-.055em;color:var(--green)}h1 em{display:block;color:var(--coral);font-style:normal}.sub{font-size:18px;line-height:1.4;margin:14px auto 19px;max-width:325px}.dog{width:100%;max-width:295px;height:175px;object-fit:cover;object-position:center 62%;border-radius:22px;border:3px solid #d9e3d3;display:block;margin:auto}.amount{display:flex;align-items:center;justify-content:center;gap:10px;margin:19px 0 4px}.amount strong{font-size:66px;line-height:1;letter-spacing:-.055em}.amount span{font-weight:800;color:#6c816c;text-align:left;font-size:13px;line-height:1.25}.help{font-size:13px;margin:6px 0 18px;color:var(--muted)}.choices{display:grid;gap:11px}.pay{min-height:62px;width:100%;border:0;border-radius:16px;display:flex;align-items:center;justify-content:center;gap:12px;cursor:pointer;font-size:21px;font-weight:900;transition:transform .15s,box-shadow .15s}.pay:active{transform:scale(.98)}.pay:focus-visible,.switch button:focus-visible,.back:focus-visible{outline:3px solid var(--coral);outline-offset:3px}.apple{background:#111;color:white}.google{background:#fff;color:#263b33;border:2px solid #d5dfd6}.venmo{background:#238bd1;color:#fff}.icontext{font-weight:1000;font-size:24px}.micro{font-size:12px;color:#778775;margin:15px 0 0}.switch{display:flex;align-items:center;justify-content:center;gap:7px;flex-wrap:wrap;margin:22px auto 0}.switch label{font-size:12px;color:#6d806e;font-weight:800}.switch button{border:1px solid #cad8c5;border-radius:50px;padding:8px 12px;background:#fff;color:#355944;cursor:pointer;font-size:12px;font-weight:800}.switch button.active{background:var(--green);color:#fff;border-color:var(--green)}.fine{text-align:center;max-width:385px;margin:19px auto 0;color:#627366;font-size:12px;line-height:1.55}.result{display:none;text-align:center}.result.show{display:block}.result .heart{font-size:55px}.result h2{font-size:29px;margin:10px 0}.result p{line-height:1.5;color:#4c6957}.back{border:none;background:var(--green);color:#fff;border-radius:14px;padding:15px 24px;font-weight:900;font-size:16px;cursor:pointer;margin-top:15px}footer{text-align:center;color:#809080;font-size:11px;margin-top:17px}#device-text{font-weight:800;color:var(--green)}@media(prefers-reduced-motion:reduce){.pay{transition:none}}
+</style>
+</head>
+<body>
+<main>
+<div class="demo">INTERACTIVE CONCEPT · NO REAL PAYMENTS</div>
+<header class="brand"><span class="mark" aria-hidden="true">🐾</span><div>LICKING COUNTY<br>HUMANE SOCIETY<small>PEOPLE ♥ PETS ♥ BRIGHTER TOMORROWS</small></div></header>
+<section class="card" aria-label="Donation demo">
+<div id="start">
+<p class="eyebrow">THEY CAN'T BUY THEIR OWN SNACKS</p>
+<h1>WE NEED <em>TREATS!</em></h1>
+<p class="sub">Three bucks. A little love.<br>A whole lot of tail wags. 🧡</p>
+<img class="dog" src="dog.jpg" alt="Smiling shelter dog from the fundraiser sign" />
+<div class="amount"><strong>$3</strong><span>ONE SMALL GIFT<br>BIG HAPPY TAILS</span></div>
+<p class="help">Choose your preferred payment option below.</p>
+<div class="choices" id="choices" aria-label="Payment options"></div>
+<p class="micro">🔒 Prototype only · No account or payment required</p>
+</div>
+<div id="result" class="result" aria-live="polite"><div class="heart" aria-hidden="true">💚</div><h2 id="result-title">Great choice!</h2><p id="result-description"></p><p><strong>No payment was made.</strong><br>This is a demonstration of the donation flow.</p><button class="back" id="back" type="button">← Back to $3 options</button></div>
+</section>
+<div class="switch" aria-label="Device preview"><label>Device preview:</label><button id="auto" type="button">Auto detect</button><button id="iphone" type="button">iPhone</button><button id="android" type="button">Android</button></div>
+<p class="fine">Displaying options for <span id="device-text">your device</span>. On iPhone, show Apple Pay + Venmo. On Android, show Google Pay + Venmo. On desktop, preview both. Real payment integrations and QR destination can be added later.</p>
+<footer>Concept demonstration for Licking County Humane Society · Not an official donation checkout</footer>
+</main>
+<script>
+(()=>{
+  const ua=navigator.userAgent||'';
+  const inferred=/Android/i.test(ua)?'android':(/iPhone|iPad|iPod/i.test(ua)||navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1?'iphone':'desktop');
+  let selected='auto';
+  const choices=document.getElementById('choices'),start=document.getElementById('start'),result=document.getElementById('result');
+  const labels={iphone:'iPhone',android:'Android',desktop:'desktop / unknown device'};
+  const methods={apple:{name:'Apple Pay',className:'apple',label:' Apple Pay',symbol:'●'},google:{name:'Google Pay',className:'google',label:'Google Pay',symbol:'G'},venmo:{name:'Venmo',className:'venmo',label:'Venmo',symbol:'V'}};
+  function render(){
+    const device=selected==='auto'?inferred:selected;
+    document.getElementById('device-text').textContent=labels[device];
+    ['auto','iphone','android'].forEach(id=>{const b=document.getElementById(id);b.classList.toggle('active',id===selected);b.setAttribute('aria-pressed',String(id===selected));});
+    const options=device==='iphone'?['apple','venmo']:device==='android'?['google','venmo']:['apple','google','venmo'];
+    choices.replaceChildren();
+    options.forEach(key=>{
+      const method=methods[key],btn=document.createElement('button');btn.type='button';btn.className='pay '+method.className;
+      const symbol=document.createElement('span');symbol.className='icontext';symbol.textContent=method.symbol;symbol.setAttribute('aria-hidden','true');
+      const name=document.createElement('span');name.textContent=method.label;btn.append(symbol,name);
+      btn.setAttribute('aria-label','Demo: select '+method.name);
+      btn.addEventListener('click',()=>{
+        document.getElementById('result-title').textContent=method.name+' selected!';
+        document.getElementById('result-description').textContent='In a live version, this would securely open the '+method.name+' donation flow for a $3 gift.';
+        start.style.display='none';result.classList.add('show');
+      });choices.appendChild(btn);
+    });
+    start.style.display='block';result.classList.remove('show');
+  }
+  ['auto','iphone','android'].forEach(id=>document.getElementById(id).addEventListener('click',()=>{selected=id;render();}));
+  document.getElementById('back').addEventListener('click',()=>{start.style.display='block';result.classList.remove('show');});
+  render();
+})();
+</script>
+</body>
+</html>
