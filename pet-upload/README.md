@@ -37,3 +37,7 @@ References:
 https://developers.google.com/workspace/drive/api/guides/manage-uploads
 https://developers.google.com/identity/protocols/oauth2/web-server
 https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages
+
+
+## Updated concept layout
+Upload index.html, styles.css, app.js and config.js into the existing pet-upload folder. Preview mode is automatic while config.js contains the placeholder URL. The form validates and previews locally; no data is sent. Do not enter a code for preview mode. The backend remains included for future setup.
